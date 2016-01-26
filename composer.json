@@ -1,0 +1,14 @@
+{
+    "name": "10up/wp-code-review",
+    "description": "Specialized rulesets to help aid in code reviews for 10up WordPress projects.",
+    "require": {
+        "wp-coding-standards/wpcs": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Grunwell",
+            "email": "steve.grunwell@10up.com"
+        }
+    ]
+}

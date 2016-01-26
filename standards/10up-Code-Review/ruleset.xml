@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ruleset name="10up-Code-Review">
+	<description>Apply the WordPress coding standards, focusing on things like sanitization, late-escaping, etc. but not making noise about documentation, whitespace, etc.</description>
+
+	<rule ref="../10up-Base/ruleset.xml">
+
+		<!-- File must end with a newline character -->
+		<exclude name="Generic.Files.EndFileNewline.NotFound" />
+
+		<!-- End of line character is invalid; expected "\n" but found "<string>" -->
+		<exclude name="Generic.Files.LineEndings.InvalidEOLChar" />
+
+		<!-- Each PHP statement must be on a line by itself -->
+		<exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine" />
+
+		<!-- String concat is not required here; use a single string instead -->
+		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found" />
+
+
+		<!-- Multi-line function call not indented correctly; expected X spaces but found Y -->
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+
+		<!-- Space before opening parenthesis of function call prohibited -->
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeOpenBracket" />
+
+		<!-- Expected 1 spaces after opening bracket; X found -->
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />
+
+		<!-- Expected 1 spaces before closing bracket; X found -->
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" />
+
+
+		<!-- Expected 1 space after closing brace; <string|int> found -->
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace" />
+
+		<!-- Drop all of the SuperflouousWhitespace checks -->
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace" />
+
+		<!-- String "<string>" does not require double quotes; use single quotes instead -->
+		<exclude name="Squiz.Strings.DoubleQuoteUsage.NotRequired" />
+
+
+		<!-- A lot can go wrong when defining an array -->
+		<exclude name="WordPress.Arrays.ArrayDeclaration" />
+
+		<!-- WordPress <3s Whitespace -->
+		<exclude name="WordPress.WhiteSpace" />
+
+	</rule>
+</ruleset>
