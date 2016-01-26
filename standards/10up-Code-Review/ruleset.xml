@@ -16,6 +16,9 @@
 		<!-- String concat is not required here; use a single string instead -->
 		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found" />
 
+		<!-- Generic whitespace rules -->
+		<exclude name="Generic.WhiteSpace" />
+
 
 		<!-- Multi-line function call not indented correctly; expected X spaces but found Y -->
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
