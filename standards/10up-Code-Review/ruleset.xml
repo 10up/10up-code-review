@@ -16,6 +16,9 @@
 		<!-- Each PHP statement must be on a line by itself -->
 		<exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine" />
 
+		<!-- How we open our functions -->
+		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
+
 		<!-- String concat is not required here; use a single string instead -->
 		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found" />
 
@@ -29,15 +32,12 @@
 		<!-- Space before opening parenthesis of function call prohibited -->
 		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeOpenBracket" />
 
-		<!-- Expected 1 spaces after opening bracket; X found -->
-		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />
-
-		<!-- Expected 1 spaces before closing bracket; X found -->
-		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" />
+		<!-- The PEAR standards opinionated about functions' call signatures -->
+		<exclude name="PEAR.Functions.FunctionCallSignature" />
 
 
-		<!-- Expected 1 space after closing brace; <string|int> found -->
-		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace" />
+		<!-- Control structures' signatures -->
+		<exclude name="Squiz.ControlStructures.ControlSignature" />
 
 		<!-- Drop all of the SuperflouousWhitespace checks -->
 		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace" />
