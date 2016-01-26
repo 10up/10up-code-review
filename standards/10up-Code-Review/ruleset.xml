@@ -48,6 +48,7 @@
 
 		<!-- A lot can go wrong when defining an array -->
 		<exclude name="WordPress.Arrays.ArrayDeclaration" />
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions" />
 
 		<!-- WordPress <3s Whitespace -->
 		<exclude name="WordPress.WhiteSpace" />
