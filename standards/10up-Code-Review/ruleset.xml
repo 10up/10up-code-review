@@ -4,6 +4,9 @@
 
 	<rule ref="../10up-Base/ruleset.xml">
 
+		<!-- Inline control structures are not allowed -->
+		<exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
+
 		<!-- File must end with a newline character -->
 		<exclude name="Generic.Files.EndFileNewline.NotFound" />
 
