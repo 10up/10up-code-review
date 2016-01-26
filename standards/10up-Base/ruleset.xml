@@ -21,5 +21,10 @@
 		<severity>0</severity>
 	</rule>
 
+	<!-- Internal exceptions (often occur on minified files) -->
+	<rule ref="Internal.Tokenizer.Exception">
+		<severity>0</severity>
+	</rule>
+
 	<rule ref="WordPress-Extra" />
 </ruleset>
