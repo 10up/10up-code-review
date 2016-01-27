@@ -1,6 +1,7 @@
 {
     "name": "10up/wp-code-review",
     "description": "Specialized rulesets to help aid in code reviews for 10up WordPress projects.",
+    "version": "0.1.0",
     "require": {
         "wp-coding-standards/wpcs": "dev-master"
     },
