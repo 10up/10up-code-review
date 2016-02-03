@@ -10,5 +10,11 @@
             "name": "Steve Grunwell",
             "email": "steve.grunwell@10up.com"
         }
+    ],
+    "post-install-cmd": [
+        "bin/install"
+    ],
+    "post-update-cmd": [
+        "bin/install"
     ]
 }
