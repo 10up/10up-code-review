@@ -2,7 +2,7 @@
 <ruleset name="10up-Code-Review">
 	<description>Apply the WordPress coding standards, focusing on things like sanitization, late-escaping, etc. but not making noise about documentation, whitespace, etc.</description>
 
-	<rule ref="../10up-Base/ruleset.xml">
+	<rule ref="10up-Base">
 
 		<!-- Inline control structures are not allowed -->
 		<exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
