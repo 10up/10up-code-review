@@ -12,17 +12,10 @@ The easiest way to install the package is globally, using Composer:
 $ composer global require 10up/10up-code-review
 ```
 
-Once installed, you'll want to set PHP_CodeSniffer's path to the 10up rulesets (which also include the various [WordPress Coding Standards rulesets](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)):
-
-```bash
-$ phpcs --config-set installed_paths /path/to/10up-code-review/standards
-```
-
 You can also install the package on a per-project basis:
 
 ```bash
 $ composer require --dev 10up/10up-code-review
-$ vendor/bin/phpcs --config-set installed_paths ../../10up/10up-code-review/standards
 ```
 
 ## Usage
