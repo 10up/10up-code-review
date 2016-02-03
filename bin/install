@@ -1,0 +1,47 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Installation script for 10up-Code-Review.
+ *
+ * This script will attempt to read existing PHP_CodeSniffer configuration
+ * files (stored in CodeSniffer.conf within the vendor/squizlabs/php_codesniffer
+ * directory), then add both the WordPress and 10up coding standards.
+ *
+ * @author 10up
+ */
+
+$baseDir = dirname( __DIR__ );
+$config  = $baseDir . '/vendor/squizlabs/php_codesniffer/CodeSniffer.conf';
+
+// Attempt to load the existing configuration, if it exists.
+if (file_exists($config)) {
+	include $config;
+} else {
+	$phpCodeSnifferConfig = array();
+}
+
+if (! isset($phpCodeSnifferConfig['installed_paths'])) {
+	$phpCodeSnifferConfig['installed_paths'] = null;
+}
+
+// Assemble the standards paths.
+$standards   = explode(',', (string) $phpCodeSnifferConfig['installed_paths']);
+$standards[] = $baseDir . '/standards';
+$standards[] = $baseDir . '/vendor/wp-coding-standards/wpcs';
+
+// Remove empty or duplicate paths.
+$standards = array_filter( array_unique( $standards ) );
+
+// Put the standards paths back into the array.
+$phpCodeSnifferConfig['installed_paths'] = implode(',', $standards);
+
+// Finally, write the config file.
+$output  = '<?php'."\n".' $phpCodeSnifferConfig = ';
+$output .= var_export($phpCodeSnifferConfig, true);
+$output .= ";\n?".'>';
+
+$fh = fopen($config, 'wb');
+fwrite($fh, $output);
+fclose($fh);
+
+echo '10up Coding Standards have been installed!' . PHP_EOL;
