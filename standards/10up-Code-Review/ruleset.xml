@@ -39,6 +39,9 @@
 		<!-- Control structures' signatures -->
 		<exclude name="Squiz.ControlStructures.ControlSignature" />
 
+		<!-- Function definitions -->
+		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing" />
+
 		<!-- Drop all of the SuperflouousWhitespace checks -->
 		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace" />
 
@@ -52,6 +55,9 @@
 
 		<!-- WordPress <3s Whitespace -->
 		<exclude name="WordPress.WhiteSpace" />
+
+		<!-- WordPress naming conventions -->
+		<exclude name="WordPress.NamingConventions" />
 
 	</rule>
 </ruleset>
