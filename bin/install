@@ -10,10 +10,12 @@
  * @author 10up
  */
 
-$baseDir = $vendorDir = dirname(__DIR__);
+$baseDir = dirname(__DIR__);
 
-// Try to determine whether we've been installed globally or not.
-if (! file_exists($baseDir . '/../autoload.php')) {
+// Is this package just one of many installed?
+if (file_exists($baseDir . '/../../autoload.php')) {
+	$vendorDir = dirname(dirname($baseDir));
+} else {
 	$vendorDir = $baseDir . '/vendor';
 }
 $configFile  = $vendorDir . '/squizlabs/php_codesniffer/CodeSniffer.conf';
