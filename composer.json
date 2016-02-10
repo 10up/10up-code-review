@@ -2,7 +2,7 @@
     "name": "10up/10up-code-review",
     "description": "Specialized rulesets to help aid in code reviews for 10up WordPress projects.",
     "require": {
-        "wp-coding-standards/wpcs": "^0.9.0"
+        "wp-coding-standards/wpcs": "dev-master"
     },
     "license": "MIT",
     "authors": [
