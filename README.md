@@ -1,5 +1,8 @@
 # 10up Code Review
 
+[![Packagist](https://img.shields.io/packagist/v/10up/10up-code-review.svg)](https://packagist.org/packages/10up/10up-code-review)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/10up/10up-code-review#license)
+
 This package is a collection of standards for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) to aid engineers at [10up](http://10up.com) when preparing for or performing code reviews.
 
 **This does not replace an actual code review**, but rather helps reviewers and engineers alike catch the low-hanging fruit so that they can focus on the hard stuff!
@@ -10,19 +13,14 @@ The easiest way to install the package is globally, using Composer:
 
 ```
 $ composer global require 10up/10up-code-review
-```
-
-Once installed, you'll want to set PHP_CodeSniffer's path to the 10up rulesets (which also include the various [WordPress Coding Standards rulesets](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)):
-
-```bash
-$ phpcs --config-set installed_paths /path/to/10up-code-review/standards
+$ ~/.composer/vendor/bin/10up-code-review-install
 ```
 
 You can also install the package on a per-project basis:
 
 ```bash
 $ composer require --dev 10up/10up-code-review
-$ vendor/bin/phpcs --config-set installed_paths ../../10up/10up-code-review/standards
+$ ./vendor/bin/10up-code-review-install
 ```
 
 ## Usage
