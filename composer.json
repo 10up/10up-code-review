@@ -12,12 +12,12 @@
         }
     ],
     "bin": [
-        "10up-code-review-install"
+        "bin/10up-code-review-install"
     ],
     "post-install-cmd": [
-        "bin/10up-code-review-install"
+        "10up-code-review-install"
     ],
     "post-update-cmd": [
-        "bin/10up-code-review-install"
+        "10up-code-review-install"
     ]
 }
