@@ -1,5 +1,8 @@
 # 10up Code Review
 
+[![Packagist](https://img.shields.io/packagist/v/10up/10up-code-review.svg)](https://packagist.org/packages/10up/10up-code-review)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/10up/10up-code-review#license)
+
 This package is a collection of standards for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) to aid engineers at [10up](http://10up.com) when preparing for or performing code reviews.
 
 **This does not replace an actual code review**, but rather helps reviewers and engineers alike catch the low-hanging fruit so that they can focus on the hard stuff!
