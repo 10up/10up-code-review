@@ -2,7 +2,7 @@
     "name": "10up/10up-code-review",
     "description": "Specialized rulesets to help aid in code reviews for 10up WordPress projects.",
     "require": {
-        "wp-coding-standards/wpcs": "dev-master"
+        "wp-coding-standards/wpcs": "^0.9.0"
     },
     "license": "MIT",
     "authors": [
@@ -10,5 +10,14 @@
             "name": "Steve Grunwell",
             "email": "steve.grunwell@10up.com"
         }
+    ],
+    "bin": [
+        "bin/10up-code-review-install"
+    ],
+    "post-install-cmd": [
+        "10up-code-review-install"
+    ],
+    "post-update-cmd": [
+        "10up-code-review-install"
     ]
 }

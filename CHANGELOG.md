@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0] - 2016-02-02
+
+* Include an installation script in `bin/install` to automatically configure PHP_CodeSniffer.
+* Automatically run the installation script on Composer install/update.
+* Move existing standards into the root of the package.
+* Update documentation to remove references to manual installation or the `standards` directory.
+
 ## [0.1.1] - 2016-01-29
 
 * Update documentation to reflect correct path to coding standards.
@@ -13,4 +20,5 @@
 * Initial public release and publish to Packagist.
 
 
-[0.1.1]: https://github.com/10up/10up-coding-standards/compare/v0.1.0...master
+[0.2.0]: https://github.com/10up/10up-coding-standards/compare/v0.1.1...master
+[0.1.1]: https://github.com/10up/10up-coding-standards/compare/v0.1.0...v0.1.1
