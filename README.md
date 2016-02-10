@@ -10,12 +10,14 @@ The easiest way to install the package is globally, using Composer:
 
 ```
 $ composer global require 10up/10up-code-review
+$ ~/.composer/vendor/bin/10up-code-review-install
 ```
 
 You can also install the package on a per-project basis:
 
 ```bash
 $ composer require --dev 10up/10up-code-review
+$ ./vendor/bin/10up-code-review-install
 ```
 
 ## Usage
