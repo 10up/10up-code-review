@@ -11,10 +11,13 @@
             "email": "steve.grunwell@10up.com"
         }
     ],
+    "bin": [
+        "10up-code-review-install"
+    ],
     "post-install-cmd": [
-        "bin/install"
+        "bin/10up-code-review-install"
     ],
     "post-update-cmd": [
-        "bin/install"
+        "bin/10up-code-review-install"
     ]
 }
