@@ -14,9 +14,6 @@
     "bin": [
         "bin/10up-code-review-install"
     ],
-    "scripts": {
-        "10up-code-review-install": "bin/10up-code-review-install"
-    },
     "post-install-cmd": [
         "10up-code-review-install"
     ],
