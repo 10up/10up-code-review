@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ruleset name="10up-Third-Party">
+	<description>Extend the 10up-Code-Review standard to ignore common (but relatively harmless) mistakes when reviewing third-party code.</description>
+
+	<rule ref="10up-Code-Review">
+
+		<!-- Yoda conditions, people often forget. -->
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+
+		<!-- Don't be so strict about strict comparisons -->
+		<exclude name="WordPress.PHP.StrictComparisons.LooseComparison" />
+
+		<!-- PHP keywords *should* be lowercase, but some people didn't get the memo. -->
+		<exclude name="Generic.PHP.LowerCaseKeyword.Found" />
+
+		<!-- Don't be as picky about whitespace. -->
+		<exclude name="Generic.Formatting" />
+
+		<!-- People rarely name files correctly. -->
+		<exclude name="WordPress.Files.FileName.UnderscoresNotAllowed" />
+
+		<!-- People rarely use in_array()'s strict mode. -->
+		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict" />
+
+	</rule>
+</ruleset>

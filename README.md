@@ -50,6 +50,12 @@ This ruleset sets some default `<ignore-pattern />` paths based on those dictate
 
 This will likely be the default coding standard that you'll use when performing code reviews; it's based on the WordPress-Extra standard but removes complaints about whitespace and general formatting, letting you focus on the important issues like performance, sanitization, late-escaping, etc.
 
+### 10up-Third-Party
+
+> Extend the 10up-Code-Review standard to ignore common (but relatively harmless) mistakes when reviewing third-party code.
+
+10up reviews third-party code before implementing it in projects, but often perfectly functional and secure code blows up PHP_CodeSniffer, as even great plugins often lack compliance with the WordPress coding standards. This standard drops some of the stricter code checks from the 10up-Code-Review standard while continuing to flag potentially unsafe code.
+
 
 ## License
 
