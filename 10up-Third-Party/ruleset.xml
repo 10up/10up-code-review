@@ -22,5 +22,20 @@
 		<!-- People rarely use in_array()'s strict mode. -->
 		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict" />
 
+		<!-- Don't throw a fit over upper-case booleans and nulls. -->
+		<exclude name="Generic.PHP.LowerCaseConstant.Found" />
+
+		<!-- He/she who writes the software picks the filenames! -->
+		<exclude name="Generic.Files.LowercasedFilename.NotFound" />
+
+		<!-- While we'd hope people would use things like wp_json_encode(), this is easy mode. -->
+		<exclude name="WordPress.PHP.DiscouragedFunctions.DiscouragedWithAlternative" />
+
+		<!-- An empty "else" isn't a security concern. -->
+		<exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedELSE" />
+
+		<!-- Discouraged !== banned functions. -->
+		<exclude name="WordPress.PHP.DiscouragedFunctions.Discouraged" />
+
 	</rule>
 </ruleset>
