@@ -7,6 +7,8 @@ This package is a collection of standards for [PHP_CodeSniffer](https://github.c
 
 **This does not replace an actual code review**, but rather helps reviewers and engineers alike catch the low-hanging fruit so that they can focus on the hard stuff!
 
+<a href="http://10up.com/contact/"><img src="https://10updotcom-wpengine.s3.amazonaws.com/uploads/2016/08/10up_github_banner-2.png" width="850"></a>
+
 ## Installation
 
 The easiest way to install the package is globally, using Composer:
