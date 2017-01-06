@@ -7,17 +7,28 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "10up",
+            "homepage": "https://10up.com"
+        },
+        {
             "name": "Steve Grunwell",
-            "email": "steve.grunwell@10up.com"
+            "email": "steve@stevegrunwell.com",
+            "homepage": "https://stevegrunwell.com"
         }
     ],
+    "support": {
+        "source": "https://github.com/10up/10up-code-review",
+        "issues": "https://github.com/10up/10up-code-review/issues"
+    },
     "bin": [
         "bin/10up-code-review-install"
     ],
-    "post-install-cmd": [
-        "10up-code-review-install"
-    ],
-    "post-update-cmd": [
-        "10up-code-review-install"
-    ]
+    "scripts": {
+        "post-install-cmd": [
+            "bin/10up-code-review-install"
+        ],
+        "post-update-cmd": [
+            "bin/10up-code-review-install"
+        ]
+    }
 }

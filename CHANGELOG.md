@@ -6,6 +6,7 @@
 
 ## [Unreleased]
 
+* Update the `composer.json` file to properly install the 10up coding standards upon installation or update.
 * Remove sniffs for "camel cap" class names when reviewing third-party code.
 
 
