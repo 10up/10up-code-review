@@ -4,6 +4,10 @@
 
 * Added the "10up-Third-Party" standard, a subset of the 10up-Code-Review standard that ignores code issues that _we'd_ never want to put in our code but are pretty common (and relatively harmless) when reviewing third-party code.
 
+## [Unreleased]
+
+* Remove sniffs for "camel cap" class names when reviewing third-party code.
+
 
 ## [0.2.0] - 2016-02-10
 

@@ -37,5 +37,8 @@
 		<!-- Discouraged !== banned functions. -->
 		<exclude name="WordPress.PHP.DiscouragedFunctions.Discouraged" />
 
+		<!-- Don't be too picky about class naming schemes. -->
+		<exclude name="WordPress.Classes.ValidClassName.NotCamelCaps" />
+
 	</rule>
 </ruleset>
