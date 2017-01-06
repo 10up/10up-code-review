@@ -11,6 +11,10 @@
             "email": "steve.grunwell@10up.com"
         }
     ],
+    "support": {
+        "source": "https://github.com/10up/10up-code-review",
+        "issues": "https://github.com/10up/10up-code-review/issues"
+    },
     "bin": [
         "bin/10up-code-review-install"
     ],
