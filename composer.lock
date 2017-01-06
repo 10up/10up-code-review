@@ -4,24 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7368f2146746514ea64aa6d611f8d5a7",
-    "content-hash": "09d60cef65a8bf73f9e1525f588b5f3f",
+    "hash": "0883d6b2e0ab15283bdf4ac0a080ac55",
+    "content-hash": "4b13ce4a524d6bbedb2bc0f2a5e8a3cb",
     "packages": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.5.1",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "6731851d6aaf1d0d6c58feff1065227b7fda3ba8"
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6731851d6aaf1d0d6c58feff1065227b7fda3ba8",
-                "reference": "6731851d6aaf1d0d6c58feff1065227b7fda3ba8",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
                 "shasum": ""
             },
             "require": {
+                "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
                 "php": ">=5.1.2"
@@ -82,24 +83,24 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-01-19 23:39:10"
+            "time": "2016-11-30 04:02:31"
         },
         {
             "name": "wp-coding-standards/wpcs",
-            "version": "0.9.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
-                "reference": "b415094aa5fd24da6eba2295323bcff840902dd3"
+                "reference": "b39490465f6fd7375743a395019cd597e12119c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/b415094aa5fd24da6eba2295323bcff840902dd3",
-                "reference": "b415094aa5fd24da6eba2295323bcff840902dd3",
+                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/b39490465f6fd7375743a395019cd597e12119c9",
+                "reference": "b39490465f6fd7375743a395019cd597e12119c9",
                 "shasum": ""
             },
             "require": {
-                "squizlabs/php_codesniffer": "~2.2"
+                "squizlabs/php_codesniffer": "^2.6"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -118,13 +119,15 @@
                 "standards",
                 "wordpress"
             ],
-            "time": "2016-02-01 16:14:59"
+            "time": "2016-08-29 20:04:47"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wp-coding-standards/wpcs": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

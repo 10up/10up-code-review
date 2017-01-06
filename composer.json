@@ -14,10 +14,12 @@
     "bin": [
         "bin/10up-code-review-install"
     ],
-    "post-install-cmd": [
-        "10up-code-review-install"
-    ],
-    "post-update-cmd": [
-        "10up-code-review-install"
-    ]
+    "scripts": {
+        "post-install-cmd": [
+            "bin/10up-code-review-install"
+        ],
+        "post-update-cmd": [
+            "bin/10up-code-review-install"
+        ]
+    }
 }
