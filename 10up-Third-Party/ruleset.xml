@@ -15,6 +15,7 @@
 
 		<!-- Don't be as picky about whitespace. -->
 		<exclude name="Generic.Formatting" />
+		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound" />
 
 		<!-- People rarely name files correctly. -->
 		<exclude name="WordPress.Files.FileName.UnderscoresNotAllowed" />
