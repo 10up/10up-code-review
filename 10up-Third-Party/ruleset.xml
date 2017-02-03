@@ -15,6 +15,7 @@
 
 		<!-- Don't be as picky about whitespace. -->
 		<exclude name="Generic.Formatting" />
+		<exclude name="Squiz.Strings.ConcatenationSpacing" />
 
 		<!-- People rarely name files correctly. -->
 		<exclude name="WordPress.Files.FileName.UnderscoresNotAllowed" />
@@ -39,6 +40,15 @@
 
 		<!-- Don't be too picky about class naming schemes. -->
 		<exclude name="WordPress.Classes.ValidClassName.NotCamelCaps" />
+
+		<!-- It matters not, whether your braces punctuate your line or begin anew, just that they exist. -->
+		<exclude name="WordPress.Classes.ClassOpeningStatement.BraceOnNewLine" />
+
+		<!-- Internationalization isn't hard, but for third-party reviews it's not a deal-breaker. -->
+		<exclude name="WordPress.WP.I18n.NonSingularStringLiteralText" />
+
+		<!-- ELSEIF and ELSE IF are, for all intents and purposes, the same. -->
+		<exclude name="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed" />
 
 	</rule>
 </ruleset>
