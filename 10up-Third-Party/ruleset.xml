@@ -47,5 +47,8 @@
 		<!-- Internationalization isn't hard, but for third-party reviews it's not a deal-breaker. -->
 		<exclude name="WordPress.WP.I18n.NonSingularStringLiteralText" />
 
+		<!-- ELSEIF and ELSE IF are, for all intents and purposes, the same. -->
+		<exclude name="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed" />
+
 	</rule>
 </ruleset>
