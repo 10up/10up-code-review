@@ -41,5 +41,8 @@
 		<!-- Don't be too picky about class naming schemes. -->
 		<exclude name="WordPress.Classes.ValidClassName.NotCamelCaps" />
 
+		<!-- It matters not, whether your braces punctuate your line or begin anew, just that they exist. -->
+		<exclude name="WordPress.Classes.ClassOpeningStatement.BraceOnNewLine" />
+
 	</rule>
 </ruleset>
