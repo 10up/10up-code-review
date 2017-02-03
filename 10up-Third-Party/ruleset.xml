@@ -44,5 +44,8 @@
 		<!-- It matters not, whether your braces punctuate your line or begin anew, just that they exist. -->
 		<exclude name="WordPress.Classes.ClassOpeningStatement.BraceOnNewLine" />
 
+		<!-- Internationalization isn't hard, but for third-party reviews it's not a deal-breaker. -->
+		<exclude name="WordPress.WP.I18n.NonSingularStringLiteralText" />
+
 	</rule>
 </ruleset>
